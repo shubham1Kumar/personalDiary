@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Personal Diary || Add Your Daily Memos</title>
+</head>
+
+<body>
+    <aside>
+        <div id="heading">
+            <h1>Memos</h1> <div id="close"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div id="memos">
+        </div>
+    </aside>
+    <main>
+        <div id="mainHeading">
+            <div id="icon">
+                <i class="fa-solid fa-bars"></i></div>
+            <h1>Write Memories</h1>
+        </div>
+        <div id="titlediv">
+            <input readonly type="text" id="title">
+        </div>
+
+        <div id="contentdiv">
+            <div id="warning">please fill data </div>
+            <textarea id="memo" placeholder="Write Diary Here" cols="30" rows="0"></textarea>
+        </div>
+        <div id="btnDiv">
+            <button id="dlt">Delete Saved Data</button>
+            <button id="clear" onclick="memoInput.value = ''">Clear</button>
+            <button id="sumbit">Save</button>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
