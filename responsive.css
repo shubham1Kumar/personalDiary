@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 0px)and (max-width:600px) {
+
+    /* Your CSS rules for screens wider than or equal to 20px */
+    body {
+        overflow-x: hidden;
+    }
+
+    aside {
+        display: none;
+        position: absolute;
+        z-index: 100000;
+        width: 50%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    #contentdiv {
+        padding-inline: 50px !important;
+        height: 300px;
+    }
+
+    #titlediv {
+        height: 30px;
+        padding-inline: 50px !important;
+    }
+
+    #mainHeading {
+        font-size: 0.8rem;
+    }
+    .closeSideBarClass{
+        display: none !important;
+    }
+    #icon {
+        position: absolute;
+        top: 20%;
+        left: 4%;
+        font-size: 1rem;
+        display: block;
+    }
+    #close{
+        display: block;
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        font-size: 1rem;
+    }
+    #warning{
+        padding-inline: 10px;
+        left: 90px;
+    }
+    #heading {
+        position: relative;
+        top: 5px;
+        text-align: center;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        /* background-color: red; */
+        width: 100%;
+    }
+    
+    #btnDiv {
+        flex-direction: column-reverse;
+
+        padding-inline: 0px;
+    }
+
+    /* #btnDiv button:nth-child(1){
+        display: block;
+    } */
+}
+
+@media (min-width: 601px)and (max-width:930px) {
+    #btnDiv {
+
+        justify-content: center;
+        padding-inline: 0px;
+    }
+    #contentdiv {
+        padding-inline: 50px !important;
+    }
+    #titlediv {
+        padding-inline: 50px !important;
+    }
+
+    #mainHeading {
+        font-size: 1rem;
+    }
+
+}
