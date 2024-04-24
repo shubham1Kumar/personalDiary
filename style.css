@@ -24,7 +24,7 @@ aside {
     position: relative;
     height: 100%;
     width: 25%;
-    background-color: #bde0fe;
+    background-color: #D4F1F4;
 }
 
 #memos {
@@ -65,7 +65,7 @@ aside {
 main {
     height: 100%;
     width: 75%;
-    background-color: #a2d2ff;
+    background-color: #B1D4E0;
 }
 
 #mainHeading {
@@ -192,14 +192,15 @@ button:active {
     height: 30px;
     width: 100%;
     letter-spacing: 1.5px;
-    background-color: rgb(109, 105, 105);
-    color: wheat;
+    background-color: #05445E;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #icon,#close{
+    cursor: pointer;
     display: none;
 }
 
